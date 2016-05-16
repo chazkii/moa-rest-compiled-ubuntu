@@ -1,4 +1,5 @@
 FROM chuckus/python-2.7-pandas
+MAINTAINER Charlie Smith <charlie.smith@mapof.ag>
 
 RUN apt-get update && apt-get install -y libpq-dev postgresql && \
     pip install psycopg2==2.6.1 && \
